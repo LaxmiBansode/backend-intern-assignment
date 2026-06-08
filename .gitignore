@@ -5,3 +5,7 @@ build/
 *.log 
 .DS_Store 
 coverage/ 
+"node_modules/" 
+".env" 
+"database.sqlite" 
+"*.log" 
