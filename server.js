@@ -10,6 +10,7 @@ const PORT = process.env.PORT || 5000;
 
 // Import routes
 const authRoutes = require('./routes/authRoutes');
+const taskRoutes = require('./routes/taskRoutes');
 
 // Middleware
 app.use(helmet());
@@ -19,6 +20,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Routes
 app.use('/api/auth', authRoutes);
+app.use('/api/tasks', taskRoutes);
 
 // Test route
 app.get('/', (req, res) => {
